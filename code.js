@@ -29,11 +29,33 @@ function isEven(num){
 function isVowel(vowel){
   // console.log(typeof vowel);
 
-  if(vowel === 'a'){
-    // console.log(vowel === 'a');
-    return true;
-  };
-
+if(vowel==='a'||vowel==='e'||vowel==='i'||vowel==='o'||vowel==='u'){
   return true;
+}else if(vowel==='A'||vowel==='E'||vowel==='I'||vowel==='O'||vowel==='U'){
+  return true;
+}else{
+  return false;
+}
+
+  // if(vowel === 'a'){
+  //   // console.log(vowel === 'a');
+  //   return true;
+  // }else if(vowel === 'A'){
+  //   return true;
+  // }else if(vowel === 'y'){
+  //   return false;
+  // }else if(vowel === 4){
+  //   return false;
+  // }else if(vowel === true){
+  //   return false;
+  // }else if(vowel === false){
+  //   return false;
+  // }else if(vowel === "banana"){
+  //   return false;
+  // }else if(typeof vowel === 'undefined'){
+  //   return false;
+  // }
+  //
+  // return true;
 
 }

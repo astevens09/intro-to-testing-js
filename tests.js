@@ -106,4 +106,25 @@ describe('isVowel',function(){
   it('should return true if "a" passed in',function(){
     expect(isVowel("a")).toBe(true);
   });
+  it('should return true if "A" passed in',function(){
+    expect(isVowel("A")).toBe(true);
+  });
+  it('should return false if "y" passed in',function(){
+    expect(isVowel("y")).toBe(false);
+  });
+  it('should return false if 4 passed in',function(){
+    expect(isVowel(4)).toBe(false);
+  });
+  it('should return false if true passed in',function(){
+    expect(isVowel(true)).toBe(false);
+  });
+  it('should return false if false passed in',function(){
+    expect(isVowel(false)).toBe(false);
+  });
+  it('should return false if "banana" passed in',function(){
+    expect(isVowel("banana")).toBe(false);
+  });
+  it('should return false if no argument are passed in. isVowel()',function(){
+    expect(isVowel()).toBe(false);
+  });
 });
