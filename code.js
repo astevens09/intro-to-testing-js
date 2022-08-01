@@ -14,3 +14,8 @@ function sayHello(name){
     return "Hello, World!";
   return "Hello, "+name+"!";
 }
+
+function isFive(num){
+
+  return num===5;
+}
