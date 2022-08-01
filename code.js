@@ -25,3 +25,15 @@ function isEven(num){
     return false;
   return num%2===0;
 }
+
+function isVowel(vowel){
+  // console.log(typeof vowel);
+
+  if(vowel === 'a'){
+    // console.log(vowel === 'a');
+    return true;
+  };
+
+  return true;
+
+}

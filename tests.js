@@ -94,3 +94,16 @@ describe('isEven', function(){
     expect(isEven()).toBe(false);
   });
 });
+
+//Unit test for isVowel function
+describe('isVowel',function(){
+  it('should be a type of function',function(){
+    expect(typeof isVowel).toBe('function');
+  });
+  it('should return a boolean type',function(){
+    expect(typeof isVowel()).toBe('boolean');
+  });
+  it('should return true if "a" passed in',function(){
+    expect(isVowel("a")).toBe(true);
+  });
+});
