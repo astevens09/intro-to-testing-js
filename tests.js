@@ -54,7 +54,43 @@ describe('isFive',function(){
   it('should return true if 5 is passed in', function(){
     expect(isFive(5)).toBe(true);
   });
-  it('should be a defined function', function(){
+  it('should return false', function(){
     expect(isFive('5')).toBe(false);
+  });
+});
+
+//Unit test for isEven function
+describe('isEven', function(){
+  it('should be a defined fuction', function(){
+    expect(typeof isEven).toBe('function');
+  });
+  it('should return a boolean',function(){
+    expect(typeof isEven()).toBe('boolean');
+  });
+  it('should return true when 2 passed in', function(){
+    expect(isEven(2)).toBe(true);
+  });
+  it('should return true when -4 passed in', function(){
+    expect(isEven(-4)).toBe(true);
+  });
+  it('should return false when 3 passed in', function(){
+    expect(isEven(3)).toBe(false);
+  });
+  it('should return false when banana passed in', function(){
+    expect(isEven('banana')).toBe(false);
+  });
+  it('should return true when "8" passed in', function(){
+    expect(isEven('8')).toBe(true);
+  });
+  it('should return false when Infinity passed in', function(){
+    expect(isEven(Infinity)).toBe(false);
+  });
+  it('should return false when boolean(true) is passed in', function(){
+    expect(isEven(true)).toBe(false);
+  });it('should return false when boolean(false) is passed in', function(){
+    expect(isEven(false)).toBe(false);
+  });
+  it('should return false when called as isEven() ', function(){
+    expect(isEven()).toBe(false);
   });
 });

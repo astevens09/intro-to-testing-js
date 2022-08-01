@@ -18,4 +18,10 @@ function sayHello(name){
 function isFive(num){
 
   return num===5;
+};
+
+function isEven(num){
+  if(typeof num === 'boolean')
+    return false;
+  return num%2===0;
 }
