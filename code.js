@@ -4,58 +4,37 @@
 //     // console.log("Hello, World!");
 // }
 
-const helloWorld = function(){
+const helloWorld = function() {
   return "Hello, World!";
 }
 
-function sayHello(name){
+function sayHello(name) {
 
-  if(typeof name !== 'string')
+  if (typeof name !== 'string')
     return "Hello, World!";
-  return "Hello, "+name+"!";
+  return "Hello, " + name + "!";
 }
 
-function isFive(num){
+function isFive(num) {
 
-  return num===5;
+  return num === 5;
 };
 
-function isEven(num){
-  if(typeof num === 'boolean')
+function isEven(num) {
+  if (typeof num === 'boolean')
     return false;
-  return num%2===0;
+  return num % 2 === 0;
 }
 
-function isVowel(vowel){
+function isVowel(vowel) {
   // console.log(typeof vowel);
-  if(typeof vowel == 'string')
+  if (typeof vowel == 'string')
     vowel = vowel.toLowerCase();
 
-if(vowel==='a'||vowel==='e'||vowel==='i'||vowel==='o'||vowel==='u'){
-  return true;
-}else{
-  return false;
-}
-
-  // if(vowel === 'a'){
-  //   // console.log(vowel === 'a');
-  //   return true;
-  // }else if(vowel === 'A'){
-  //   return true;
-  // }else if(vowel === 'y'){
-  //   return false;
-  // }else if(vowel === 4){
-  //   return false;
-  // }else if(vowel === true){
-  //   return false;
-  // }else if(vowel === false){
-  //   return false;
-  // }else if(vowel === "banana"){
-  //   return false;
-  // }else if(typeof vowel === 'undefined'){
-  //   return false;
-  // }
-  //
-  // return true;
+  if (vowel === 'a' || vowel === 'e' || vowel === 'i' || vowel === 'o' || vowel === 'u') {
+    return true;
+  } else {
+    return false;
+  }
 
 }
