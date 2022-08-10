@@ -28,10 +28,10 @@ function isEven(num){
 
 function isVowel(vowel){
   // console.log(typeof vowel);
+  if(typeof vowel == 'string')
+    vowel = vowel.toLowerCase();
 
 if(vowel==='a'||vowel==='e'||vowel==='i'||vowel==='o'||vowel==='u'){
-  return true;
-}else if(vowel==='A'||vowel==='E'||vowel==='I'||vowel==='O'||vowel==='U'){
   return true;
 }else{
   return false;
